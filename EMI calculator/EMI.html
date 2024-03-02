@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMI Calculator</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body background="assets/picture/Trending GIF animation art gif design loop 3d money color c4d paper cinema 4d cash bills atm cash money stacks.gif">
+  <div class="container" >
+    <h1>EMI Calculator</h1>
+    <form id="emi-form">
+      <label for="principal">Principal Amount (₹):</label>
+      <input type="number" id="principal" name="principal" required><br>
+      <label for="interest">Interest Rate (%):</label>
+      <input type="number" id="interest" name="interest" required><br>
+      <label for="tenure">Loan Tenure (Years):</label>
+      <input type="number" id="tenure" name="tenure" required><br>
+      <button type="button" onclick="calculateEMI()">Calculate EMI</button>
+    </form>
+    <p id="emi-output"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
