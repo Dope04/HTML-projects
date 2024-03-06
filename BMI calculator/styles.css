@@ -2,7 +2,7 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: aquamarine;
   }
   
   h1 {
@@ -14,7 +14,7 @@ body {
   .container {
     width: 400px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: rgb(154, 255, 221);
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
