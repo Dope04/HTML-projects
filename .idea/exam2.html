@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Application Form</title>
+    </head>
+    <body>
+        <h1>Application Form</h1>
+        <form id="myForm">
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob"><br>
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age"><br>
+            <label for="gender">Gender:</label><br>
+            <input type="text" id="gender" name="gender"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+            <label for="confirmpassword">Confirm Password:</label><br>
+            <input type="password" id="confirmpassword" name="confirmpassword"><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+        <h3>Position Available</h3>
+        <form>
+            <input type="checkbox" id="Junior Developer" name="Junior Developer">
+            <label for="Junior Developer">Junior Developer</label><br>
+            <input type="checkbox" id="Mid-level Developer" name="Mid-level Developer">
+            <label for="Mid-level Developer">Mid-level Developer</label><br>
+            <input type="checkbox" id="Senior Developer" name="Senior Developer">
+            <label for="Senior Developer">Senior Developer</label><br>
+        </form>
+        <h3>Programming languages</h3>
+        <form>
+            <input type="checkbox" id="python" name="python">
+            <label for="python">Python</label><br>
+            <input type="checkbox" id="java" name="java">
+            <label for="java">Java</label><br>
+            <input type="checkbox" id="javascript" name="html">
+            <label for="javascript">Javascript</label><br>
+        </form>
+    </body>
+    <script>
+        document.getElementById("myForm").onsubmit = function() {
+            if (document.getElementById("password").value!= document.getElementById("confirmpassword").value) {
+                alert("Passwords do not match. Please correct and try again.");
+                return false;
+            } else {
+                alert("Thank you for registering!");
+            }
+        };
+    </script>
+</html>
